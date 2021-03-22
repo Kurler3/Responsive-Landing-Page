@@ -1,0 +1,42 @@
+.footer {
+  &-title {
+    padding: 4em;
+  }
+  &-nav {
+    padding: 2em;
+    text-align: center;
+    p {
+      padding: 1em 0 1.5em 0;
+    }
+
+    @include desktop {
+      padding:2em 5em;
+    }
+    .footer-list {
+      list-style: none;
+      font-family: $overpass-font-family;
+      .footer-item {
+        padding-bottom: 0.7em;
+        a {
+          text-decoration: none;
+          color: $grayish-blue;
+
+          &:hover {
+            border-bottom: 1px solid white;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  @include desktop {
+    .desktop-footer-container{
+      display: flex;
+      width: 80%;
+      margin: 0 auto;
+    }
+    
+  }
+}
